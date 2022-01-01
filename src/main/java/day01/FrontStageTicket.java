@@ -3,10 +3,10 @@ package day01;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class FrontOfStageTicket extends Ticket {
+public class FrontStageTicket extends Ticket {
     private String extraCode;
 
-    public FrontOfStageTicket(String artist, LocalDateTime startTime, int price, String extraCode) {
+    public FrontStageTicket(String artist, LocalDateTime startTime, int price, String extraCode) {
         super(artist, startTime, price);
         this.extraCode = extraCode;
     }

@@ -9,7 +9,7 @@ public class Concert {
 
     public void addPerson(Person person, LocalTime currentTime) {
         if (currentTime.isBefore(person.getTicket().entryTime())) {
-            throw new IllegalArgumentException("Can't get in!");
+            throw new IllegalArgumentException("Keep out!");
         }
         personList.add(person);
     }

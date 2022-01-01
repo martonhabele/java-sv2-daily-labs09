@@ -18,7 +18,7 @@ class ConcertTest {
 
     @Test
     void dateTestWithInvalidTime() {
-        Person person1 = new Person(new FrontOfStageTicket("KISS",
+        Person person1 = new Person(new FrontStageTicket("KISS",
                 LocalDateTime.of(2021, 12, 22, 14, 0), 2000, "ABC123"));
 
         Concert concert = new Concert();
